@@ -1,12 +1,12 @@
-import { AiImage, Button, Input } from 'curiosity-ui';
+import { AiImage, Button, Container, Input } from 'curiosity-ui';
 
 function App() {
   return (
-    <div>
+    <Container direction='row'>
       <Input placeholder="Type something..." />
       <Button variant="danger">Delete</Button>
       <AiImage prompt="Cute cat" />
-    </div>
+    </Container>
   );
 }
 
