@@ -9,6 +9,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -b ",
+    "watch": "tsc -b --watch",
     "lint": "eslint .",
     "preview": "vite preview"
   },

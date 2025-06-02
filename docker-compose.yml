@@ -4,7 +4,7 @@ services:
     ports:
       - "5173:5173"
     volumes:
-      - ./ui-kit:/app/ui-kit
+      - ./curiosity-ui:/app/curiosity-ui
       - ./demo:/app/demo
     environment:
       - NODE_ENV=development
