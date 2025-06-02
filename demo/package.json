@@ -1,19 +1,15 @@
 {
-  "name": "curiosity-ui",
+  "name": "demo",
   "private": true,
-  "version": "0.0.1",
+  "version": "0.0.0",
   "type": "module",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
-  "files": ["dist"],
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b ",
+    "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview"
   },
   "dependencies": {
-    "@runware/sdk-js": "^1.1.40",
     "react": "^19.1.0",
     "react-dom": "^19.1.0"
   },

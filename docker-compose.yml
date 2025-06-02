@@ -1,0 +1,10 @@
+services:
+  dev:
+    build: .
+    ports:
+      - "5173:5173"
+    volumes:
+      - ./ui-kit:/app/ui-kit
+      - ./demo:/app/demo
+    environment:
+      - NODE_ENV=development
