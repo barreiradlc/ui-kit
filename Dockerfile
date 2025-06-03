@@ -1,5 +1,5 @@
 # Use a Node.js image
-FROM node:18
+FROM node:22
 
 WORKDIR /app
 
@@ -14,4 +14,4 @@ RUN cd /app/demo && npm install && npm link "curiosity-ui"
 
 EXPOSE 5173
 
-CMD ["npm", "run", "dev", "--prefix", "demo", "--host"]
+CMD ["npx", "npm-run-all", "--parallel", "watch:lib", "dev"]

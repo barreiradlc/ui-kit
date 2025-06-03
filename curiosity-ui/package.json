@@ -5,10 +5,13 @@
   "type": "module",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-  "files": ["dist", "dist/styles.css"],
+  "files": [
+    "dist",
+    "dist/styles.css"
+  ],
   "scripts": {
-    "dev": "vite",
-    "build": "tsc -b ",
+    "dev": "vite --host",
+    "build": "tsc -b",
     "watch": "tsc -b --watch",
     "lint": "eslint .",
     "build:css": "tailwindcss -i ./src/index.css -o ./src/styles.css",

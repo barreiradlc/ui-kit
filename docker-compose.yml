@@ -6,5 +6,6 @@ services:
     volumes:
       - ./curiosity-ui:/app/curiosity-ui
       - ./demo:/app/demo
+    working_dir: /app/demo
     environment:
       - NODE_ENV=development
