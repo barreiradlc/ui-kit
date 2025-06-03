@@ -7,11 +7,11 @@ interface ContainerProps extends React.DetailedHTMLProps<HTMLAttributes<HTMLDivE
 export const Container: React.FC<ContainerProps> = (props) => {
   const { direction = "row", children } = props;
 
-  const flexDirection = `flex-${direction === "row" ? "row" : "column"}`;
+  const flexDirection = `${direction === "row" ? "flex-row" : "flex-col"}`;
 
   return (
     <div
-      className={`flex p-4 gap-4 ${flexDirection}`}
+      className={`p-4 gap-4 flex ${flexDirection}`}
       {...props}
     >
       {children}
