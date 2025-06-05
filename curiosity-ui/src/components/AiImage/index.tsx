@@ -32,6 +32,13 @@ const AiImage: React.FC<AiImageProps> = ({ prompt }) => {
 
   if(!imageUrl) return <span>Load ing image...</span>
 
-  return <img width={width} height={height} src={imageUrl} alt={prompt} className={`rounded shadow `} />
+  return <img 
+    width={width / 2} 
+    height={height / 2} 
+    src={imageUrl} 
+    alt={prompt} 
+    className={`rounded shadow max-w-3xs max-h-3xs`} 
+  />
 }
+
 export { AiImage };
