@@ -4,7 +4,7 @@ function App() {
   return (
     <Container direction="col">
       <Input placeholder="Type something..." />
-      <Button variant="secondary">Do something</Button>
+      <Button variant="danger">Delete</Button>
       <AiImage prompt="Cute cat" />
     </Container>
   );
