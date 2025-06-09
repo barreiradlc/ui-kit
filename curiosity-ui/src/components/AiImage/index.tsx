@@ -30,14 +30,14 @@ const AiImage: React.FC<AiImageProps> = ({ prompt }) => {
 
   const { width, height } = imageSize
 
-  if(!imageUrl) return <span>Load ing image...</span>
+  if(!imageUrl) return <span>Loading image...</span>
 
   return <img 
-    width={width / 2} 
-    height={height / 2} 
+    width={320} 
+    height={320} 
     src={imageUrl} 
     alt={prompt} 
-    className={`rounded shadow max-w-3xs max-h-3xs`} 
+    className={`rounded shadow size-${Math.min(width, height)}`} 
   />
 }
 
